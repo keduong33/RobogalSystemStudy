@@ -1,9 +1,16 @@
-import Home from "./components/Home";
+import Calendar from "./components/Calendar";
+import CRUD from "./components/CRUD";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <div>
+        <CRUD />
+      </div>
+      <br></br>
+      <div>
+        <Calendar />
+      </div>
     </div>
   );
 }

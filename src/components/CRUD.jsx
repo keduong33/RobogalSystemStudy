@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import {db} from "../firebase";
 import { doc, setDoc, deleteDoc, getDoc } from '@firebase/firestore';
-function Home() {
+function CRUD() {
     const userMessage = useRef();
     const userName = useRef();
     const userId = useRef();
@@ -77,6 +77,7 @@ function Home() {
 
   return (
     <div>
+        <h1>CRUD Practice</h1>
         <div>
             <form onSubmit={handleSave}>
                 <label>Enter Message: </label>
@@ -112,4 +113,4 @@ function Home() {
   )
 }
 
-export default Home
+export default CRUD
