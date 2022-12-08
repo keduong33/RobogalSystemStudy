@@ -1,4 +1,4 @@
-import Calendar from "./components/Calendar";
+import CalendarForm from "./components/CalendarForm";
 import CRUD from "./components/CRUD";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       </div>
       <br></br>
       <div>
-        <Calendar />
+        <CalendarForm />
       </div>
     </div>
   );
