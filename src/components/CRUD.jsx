@@ -1,3 +1,7 @@
+// Reference: https://firebase.google.com/docs/firestore/manage-data/add-data
+// https://firebase.google.com/docs/firestore/manage-data/delete-data
+// https://firebase.google.com/docs/firestore/query-data/get-data
+
 import React, { useRef } from "react";
 import { db } from "../firebase";
 import { doc, setDoc, deleteDoc, getDoc } from "@firebase/firestore";

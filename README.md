@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Note
+I put some reference links that I used to learn these stuff!! Have fun --> the below scripts are used to setup and run the webapp on your localhost
+
 ## Available Scripts
 
 Before running anything, you gotta make sure you have npm & npx installed and setup
