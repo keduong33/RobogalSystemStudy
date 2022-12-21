@@ -1,0 +1,44 @@
+
+      {/* ---------------------------------------- */}
+      {/* Tailwindcss */}
+      {/* Reference: https://reactjsexample.com/a-modern-date-range-picker-component-for-react-using-tailwind-3-and-dayjs/ 
+      Apparently this one uses Tailwind 3 and dayjs in it --> Support Typescript*/}
+      <div>
+        <h1 className="text-center text-4xl">Calendar type 2</h1>
+        <div className="flex justify-center">
+          <Datepicker value={value} onChange={setValue} showShortcuts={true} />
+        </div>
+        <div>
+          <p className="text-center">
+            <span className="font-bold">Selected Date: </span>
+            {value.toDateString()}
+          </p>
+        </div>
+      </div>
+
+      {/* ------------------------------------------- */}
+      {/* MUI */}
+      {/* Reference: https://mui.com/x/react-date-pickers/getting-started//} */}
+      <div>
+        <h1 className="text-center text-4xl">Calendar type 3</h1>
+        <div className="flex justify-center">
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DesktopDatePicker
+              label="Date desktop"
+              inputFormat="DD/MM/YYYY"
+              value={valueMUI}
+              onChange={setValueMUI}
+              renderInput={(params) => <TextField {...params} />}
+            />
+            {/* Gotta be careful with Calendar --> gotta set default value^ */}
+            <CalendarPicker date={valueMUI2} onChange={setValueMUI2} />
+          </LocalizationProvider>
+        </div>
+        <div>
+          <p className="text-center">
+            <span className="font-bold">Selected Date: </span>
+            {"valueMUI: " + valueMUI.toString()}
+            {" valueMUI2: " + valueMUI2.toString()}
+          </p>
+        </div>
+      </div>
